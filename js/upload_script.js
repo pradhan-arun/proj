@@ -76,7 +76,7 @@ function upload_validation(){
     ssc_certificate=ssc_certificate.files[0].name;
     totall = totall.files[0].name;
     addUploadFile(recent_photo,hsc_certificate,ssc_certificate,totall);
-    window.location.reload("result.html");
+    window.location.replace("result.html");
     return true;
 
 }
