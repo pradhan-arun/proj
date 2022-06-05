@@ -1,7 +1,7 @@
 
 const namecheck =/^[A-Za-z]{2,20}\w$/;
-const emailCheck = /^[a-zA-Z.]{2,10}[a-zA-Z0-9.]{1,}@[A-Za-z]{2,}.[a-zA-Z]{2,}.{1,3}$/;
-const numberCheck = /^[6789]{1}[0-9]{9}$/;
+const emailCheck = /^[a-zA-Z.]{2,10}[a-zA-Z0-9.]{1,}@[A-Za-z]{2,}.[a-zA-Z]{2,}.{1,3}\w$/;
+const numberCheck = /^[6789]{1}[0-9]{9}\w$/;
 
 function nameChecking(name){
     return namecheck.test(name); 

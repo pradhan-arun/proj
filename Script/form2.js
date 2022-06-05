@@ -1,5 +1,5 @@
 const nameCheck = /^[A-Za-z ]{1,}\w$/;
-const numberCheck = /^[0-9.]{2,5}%$/;
+const numberCheck = /^[0-9.]{2,5}%\w$/;
 function nameChecking(name){
     return nameCheck.test(name);
 }
@@ -7,10 +7,8 @@ function nameChecking(name){
 function addItem(hsc_institute,hsc_board,hsc_score,ssc_institute,ssc_board,ssc_score,current_institute,current_pursuing){
     for(var i=0;i<localStorage.length;i++){
         var name = localStorage['key'](i);
-        alert(localStorage['key'](i));
         if(localStorage['key'](i) == localStorage.getItem('name')){
             let data = JSON.parse(localStorage.getItem(name));
-            alert(data);
             data['hsc_institute']=hsc_institute;
             data['hsc_score']=hsc_score;
             data['hsc_board']=hsc_board;
@@ -90,7 +88,6 @@ function validate(){
         return false;
     }
     addItem(hsc_institute,hsc_board,hsc_score,ssc_institute,ssc_board,ssc_score,current_institute,current_pursuing);
-    alert("upload document is loaded"+window.URL);
     return true;
 }
 var btn = document.querySelector('#back');
