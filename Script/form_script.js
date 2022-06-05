@@ -1,6 +1,6 @@
 
-const namecheck =/^[A-Za-z]{2,20}$/;
-const emailCheck = /^[a-zA-Z.]{2,10}[a-zA-Z0-9.]{1,}@[A-Za-z]{2,}.[a-zA-Z]{2,}.{1,3}/;
+const namecheck =/^[A-Za-z]{2,20}\w$/;
+const emailCheck = /^[a-zA-Z.]{2,10}[a-zA-Z0-9.]{1,}@[A-Za-z]{2,}.[a-zA-Z]{2,}.{1,3}$/;
 const numberCheck = /^[6789]{1}[0-9]{9}$/;
 
 function nameChecking(name){
@@ -111,8 +111,6 @@ function validation(){
     }
     else{ alert("Your account is already exist::");
         return false;
-    }
-
-    
+    }   
     return true;
 }
