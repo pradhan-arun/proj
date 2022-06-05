@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/form2Style.css">
+    <title>Registration second form</title>
+</head>
+<script>
+     if(localStorage.getItem('register') == false || localStorage.getItem('register') == null){
+        alert(" carefully fill the certificate details");
+        window.location.replace("index.html");
+    }
+</script>
+<body>
+    <form  onsubmit="return validate()" action="upload.html">
+        <fieldset>
+            <legend> Second page</legend>
+            <table align="center">
+                <tr>
+                    <td>HSC Institution Name : <span class="color-red">*</span><span id="hsc_institute_error" class="color-red"></span></td>
+                    <td><input type="text" id="hsc_institute"></td>
+                </tr>
+                <tr>
+                    <td>HSC Board (i.e CBSC,ICSC,Or STATE BOARD) : <span class="color-red">*</span><span id="hsc_board_error" class="color-red"></span></td>
+                    <td><input type="text" id="hsc_board"></td>
+                </tr>
+                <tr>
+                    <td>Score in HSC percentage(%)<span class="color-red">*</span><span id="hsc_score_error" class="color-red"></span></td>
+                    <td><input type="text" id="hsc_score"></td>
+                </tr>
+                <tr>
+                    <td>SSC Institution Name : <span class="color-red">*</span><span id="ssc_institute_error" class="color-red"></span></td>
+                    <td><input type="text" id="ssc_institute"></td>
+                </tr>
+                <tr>
+                    <td>SSC Board (i.e CBSC,ICSC,Or STATE BOARD) : <span class="color-red">*</span><span id="ssc_board_error" class="color-red"></span></td>
+                    <td><input type="text" id="ssc_board"></td>
+                </tr>
+                <tr>
+                    <td>Score in SSC percentage(%)<span class="color-red">*</span><span id="ssc_score_error" class="color-red"></span></td>
+                    <td><input type="text" id="ssc_score"></td>
+                </tr>
+                <tr>
+                    <td>Currently pursuing<span class="color-red">*</span><span id="current_pursuing_error" class="color-red"></span></td>
+                    <td><input type="text" name="" id="current_pursuing"></td>
+                </tr>
+                <tr>
+                    <td>Current Educational Institute Name :<span class="color-red">*</span> <span id="current_institute_error" class="color-red"></span></td>
+                    <td><input type="text" id="current_institute"></td>
+                </tr>
+                <tr>
+                    <td>Overall Percentage</td>
+                    <td><input type="text" id="overall_percentage"></td>
+                </tr>
+                <tr>
+                    <td>Current Backlog :(yes or no) - <span class="color-red">*</span></td>
+                    <td><input type="text" id="backlog"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" value="Back" id="back">Back</button></td>
+                    <td><button type="submit">Next</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+<script src="Script/form2.js"></script>
+</html>

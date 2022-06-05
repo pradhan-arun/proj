@@ -1,0 +1,45 @@
+input{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-bottom-color: black;
+    border-radius: 5px;
+}
+span{
+    color: red;
+}
+.color-red{
+    color: brown;
+}
+td{
+    padding: 5px;
+    transition: 1s;
+    font-weight: bold;
+}
+.color-green{
+    color: green;
+}
+marquee{
+    background-color: crimson;
+    height:45px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:hover{
+    border: none;
+}
+button{
+    width: 100%;
+    border-radius: 5px;
+}
+button:hover{
+    height: 25px;
+    background-color: red;
+    color:white
+}
+legend{
+    color: darkblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT</title>
+</head>
+<style>
+
+    td{
+        color: blue;
+    }
+    th{
+        align-items: center;
+        background-color: brown;
+    }
+</style>
+<body>
+    <table id="tab" align="center">
+    </table>
+    <table align="center"><tfoot><tr><td colspan="2"><button type="submit" onclick="resetValue();">click here to go to register page</button></td></tr></tfoot></table>
+</body>
+<script>
+    if(localStorage.getItem('name') == undefined || localStorage.getItem('name')==null){
+        window.location.replace("index.html");
+    }
+</script>
+<script src="Script/result_show.js"></script>
+</html>

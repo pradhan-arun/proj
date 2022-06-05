@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/upload_style.css">
+    <title>File upload</title>
+</head>
+<script>
+    if(localStorage.getItem('register') == true && localStorage.getItem('certificate')== true){
+        alert("Upload documents");
+    }
+    else{
+        if(!localStorage.getItem('register') == true){
+            window.location.replace("index.html");
+        }
+        if(!localStorage.getItem('certificate') == true){
+            window.location.replace("form2.html");
+        }
+    }
+</script>
+<body>
+    <form onsubmit="return upload_validation()" action="result.html">
+    <fieldset>
+    
+    <legend>Upload Document</legend>
+    <table align="center">
+        <tr>
+            <td>Recent Passport Size photo (size between 4 mb)</td>
+            <td><input type="file" name="file" id="recent_photo"  value="Rececent_photo" required></td>
+            <td><span id="fileError_photo" class=""></span></td>
+        </tr>
+        <tr>
+            <td>HSC certificate (size between 4 mb)</td>
+            <td><input type="file" name="file" id="hsc_certificate"  value="hsc_certificate" ></td>
+            <td><span id="fileError_hsc"></span></td>
+        </tr>
+        <tr>
+            <td>SSC certificate (size between 4 mb)</td>
+            <td><input type="file" name="file" id="ssc_certificate" value="ssc_certificate" ></td>
+            <td><span id="fileError_ssc"></span></td>
+        </tr>
+        <tr>
+            <td>Total Certufucate (size between 10 mb)</td>
+            <td><input type="file" name="file" id="totall" value="total_certificate" required></td>
+            <td><span id="fileError_total"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+</form>
+</fieldset>
+</body>
+<script src="script/upload_script.js"></script>
+</html>
