@@ -1,0 +1,25 @@
+marquee{
+    background-color: crimson;
+    height:45px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 3rem;
+}
+
+a{
+    font-weight: 2rem;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.exists{
+    padding: 8px;
+}
+a:hover{
+    background-color:crimson;
+    color: white;
+}
