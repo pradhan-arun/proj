@@ -10,7 +10,7 @@
 <script>
      if(localStorage.getItem('register') == false || localStorage.getItem('register') == null){
         alert(" You something is missed.. please check it and try again");
-        window.location.replace("index.html");
+        window.location.replace("registration.html");
     }
 </script>
 <body>
@@ -51,7 +51,7 @@
                     <td><input type="text" id="current_institute"></td>
                 </tr>
                 <tr>
-                    <td>Overall Percentage</td>
+                    <td>Overall Percentage :<span class="color-red">*</span> <span id="overall_percentage_error" class="color-red"></span></td>
                     <td><input type="text" id="overall_percentage"></td>
                 </tr>
                 <tr>

@@ -1,5 +1,5 @@
 const nameCheck = /^[A-Za-z ]{1,}\w$/;
-const numberCheck = /^[0-9.]{2,5}%\w$/;
+const numberCheck = /^[0-9.]{2,5}%$/;
 function nameChecking(name){
     return nameCheck.test(name);
 }
@@ -87,6 +87,11 @@ function validate(){
         document.getElementById('current_pursuing_error').innerHTML="INVALID NAME";
         return false;
     }
+    if(nameChecking(overall_percentage)){ document.getElementById('overall_percentage_error').innerHTML=""; } else { 
+        alert("Invalid name of current pursuing");
+        document.getElementById('overall_percentage_error').innerHTML="INVALID NAME";
+        return false;
+    }
     addItem(hsc_institute,hsc_board,hsc_score,ssc_institute,ssc_board,ssc_score,current_institute,current_pursuing);
     return true;
 }
@@ -98,7 +103,7 @@ btn.addEventListener("click",function(){
         return false;   
     }
     else{
-        window.location.replace("/index.html");
+        window.location.replace("/registration.html");
         console.log("Register is incomplete");
         
     }

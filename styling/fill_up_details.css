@@ -1,0 +1,21 @@
+marquee{
+    background-color: crimson;
+    height:45px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form{
+    margin-top: 20px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+}
+span{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 2rem;
+}
+input{
+    margin: 10px;
+    background-color: turquoise;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling/form_style.css">
+    <title>Registration From</title>
+  </head>
+  <body>
+      <marquee behavior="" direction="">Net-tantra</marquee>
+    <form onsubmit="return validation()" action="form2.html">
+        <fieldset>
+            <legend>Registration</legend>
+      <table align="center">
+          <tr>
+              <td>Name<span id="star">*</span>  <span id="nameError" class="color-red"></span><span id="success color-green"></span></td>
+          </tr>
+          <tr>
+              <td><input type="text" id="fname" placeholder="first name">
+              
+            </td>
+              <td><input type="text" id="lname" placeholder="Last name">
+                <span id="nameError" class="color-red"></span>
+            </td>
+          </tr>
+          <tr>
+              <td>Date of Birth<span id="star">*</span></td>
+          </tr>
+          <tr>
+              <td colspan="2"><input type="date" name="" id="date" required></td>
+              <td></td>
+              
+          </tr>
+          <tr>
+              <td>Email <span>*</span></td>
+             
+          </tr>
+          <tr>
+                <td colspan="2"><input type="text" name="" id="email">
+                    <span id="emailError" class="color-red"></span>
+                </td>
+                <td></td>
+          </tr>
+          <tr>
+              <td>Father's name <span>*</span><span id="father_nameError" class="color-red"></span></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="father_first_name" placeholder="First name"></td>
+            <td><input type="text" id="father_last_name" placeholder="last name"></td>
+          </tr>
+          <tr>
+            <td>Mother's name <span>*</span><span id="mother_nameError" class="color-red"></span></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="mother_first_name" placeholder="First name"></td>
+          <td><input type="text" id="mother_last_name" placeholder="last name"></td>
+        </tr>
+        <tr>
+            <td>Gender <span>*</span></td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="gender" id="male" value="male"></td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="gender" id="female" value="female"></td>
+            <td>F</td>
+        </tr>
+        <tr>
+           <td>Nationality <span>*</span></td> 
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" id="nationality" required></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Home address <span>*</span></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="street address" id="street_address" required></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="city" id="city" required></td>
+            <td><input type="text" placeholder="country" id="country" required></td>
+        </tr>
+        <tr>
+            <td>Telephone - Home</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" name="" id="tel_home"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Telephone - Mobile number <span>*</span></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" id="tel_mobile"  placeholder="##########">
+                <span id="mobileError" class="color-red"></span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><button type="reset">Reset</button></td>
+            <td><button type="submit">Next</button></td>
+        </tr>
+      </table>
+      </fieldset>
+    </form>
+  </body>
+  <script src="Script/form_script.js"></script>
+</html>
