@@ -21,5 +21,5 @@ function resetValue(){
     localStorage.removeItem('register');
     localStorage.removeItem('certificate');
     localStorage.removeItem('name');
-    window.location.replace("/");
+    return true;
 }
