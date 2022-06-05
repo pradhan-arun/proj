@@ -42,7 +42,6 @@ function validate(){
     var current_institute = document.getElementById('current_institute').value;
     var overall_percentage = document.getElementById('overall_percentage').value;
     var backlog = document.getElementById('backlog').value;
-    console.log("hello");
     if(nameChecking(hsc_institute)){
         document.getElementById('hsc_institute_error').innerHTML="";
     }
@@ -87,7 +86,7 @@ function validate(){
         document.getElementById('current_pursuing_error').innerHTML="INVALID NAME";
         return false;
     }
-    if(nameChecking(overall_percentage)){ document.getElementById('overall_percentage_error').innerHTML=""; } else { 
+    if(numberChecking(overall_percentage)){ document.getElementById('overall_percentage_error').innerHTML=""; } else { 
         alert("Invalid name of current pursuing");
         document.getElementById('overall_percentage_error').innerHTML="INVALID NAME";
         return false;

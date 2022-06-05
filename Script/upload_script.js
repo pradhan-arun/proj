@@ -1,17 +1,14 @@
 function addUploadFile(recent_photo,hsc_certificate,ssc_certificate,totall){
     for(var i=0;i<localStorage.length;i++){
         var name = localStorage['key'](i);
-        alert(localStorage['key'](i));
         if(localStorage['key'](i) == localStorage.getItem('name')){
             let data = JSON.parse(localStorage.getItem(name));
-            alert(data);
             data['recent_photo']=recent_photo;
             data['hsc_certificate_photo']=hsc_certificate;
             data['ssc_certificate_photo']=ssc_certificate;
             data['totall_certificate_photo']=totall;
             console.log("data inserted successfully");
             localStorage.setItem(data.name, JSON.stringify(data));
-            alert(data);
         }
         else{
             console.log("not matched");

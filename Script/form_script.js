@@ -45,7 +45,6 @@ function verifyAccount(name,tel_mobile){
         let data = JSON.parse(duplicate);
         
         if(data.tel_mobile == tel_mobile){
-            alert(data);
             localStorage.setItem('register',true);
             localStorage.setItem('name',name);
             return false;
