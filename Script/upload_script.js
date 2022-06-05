@@ -24,7 +24,7 @@ function upload_validation(){
     var ssc_certificate = document.getElementById('ssc_certificate');
     var totall = document.getElementById('totall');
 
-    if(recent_photo.files[0].size < 4000000 & recent_photo.files[0].type == "image/jpeg"){
+    if(recent_photo.files[0].size < 4000000 && recent_photo.files[0].type == "image/jpeg"){
         console.log(recent_photo.files[0].type);
         document.getElementById('fileError_photo').classList.remove("color-red");
         document.getElementById('fileError_photo').classList.add("color-green");
@@ -36,7 +36,7 @@ function upload_validation(){
             document.getElementById('fileError_photo').innerHTML="failed to upload photo";
             return false;
     }
-    if(hsc_certificate.files[0].size < 4000000 & ( hsc_certificate.files[0].type=="image/jpeg" || hsc_certificate.files[0].type=="application/pdf" || hsc_certificate.files[0].type=="application/vnd.openxmlformats-officedocument.wordprocessingml.document")){
+    if(hsc_certificate.files[0].size < 4000000 && ( hsc_certificate.files[0].type=="image/jpeg" || hsc_certificate.files[0].type=="application/pdf" || hsc_certificate.files[0].type=="application/vnd.openxmlformats-officedocument.wordprocessingml.document")){
         console.log(hsc_certificate.files[0].name);
         document.getElementById('fileError_hsc').classList.remove("color-red");
         document.getElementById('fileError_hsc').classList.add("color-green");
@@ -48,7 +48,7 @@ function upload_validation(){
             document.getElementById('fileError_hsc').innerHTML = "failed to load hsc certificate";
             return false;
     }
-    if(ssc_certificate.files[0].size < 4000000 &  ( ssc_certificate.files[0].type=="image/jpeg" || ssc_certificate.files[0].type=="application/pdf" || ssc_certificate.files[0].type=="application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
+    if(ssc_certificate.files[0].size < 4000000 &&  ( ssc_certificate.files[0].type=="image/jpeg" || ssc_certificate.files[0].type=="application/pdf" || ssc_certificate.files[0].type=="application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
         console.log(ssc_certificate.files[0].type);
         document.getElementById('fileError_ssc').classList.remove("color-red");
         document.getElementById('fileError_ssc').classList.add("color-green");
@@ -59,7 +59,7 @@ function upload_validation(){
         document.getElementById('fileError_ssc').innerHTML = "Failed to load ssc certificate";
         return false;
     }
-    if(totall.files[0].size < 10000000 & (totall.files[0].type == "application/pdf" || totall.files[0].type =="application/vnd.openxmlformats-officedocument.wordprocessingml.document" )) {
+    if(totall.files[0].size < 10000000 && (totall.files[0].type == "application/pdf" || totall.files[0].type =="application/vnd.openxmlformats-officedocument.wordprocessingml.document" )) {
         console.log(totall.files[0].type);
         document.getElementById('fileError_total').classList.remove("color-red");
         document.getElementById('fileError_total').classList.add("color-green");
@@ -76,6 +76,7 @@ function upload_validation(){
     ssc_certificate=ssc_certificate.files[0].name;
     totall = totall.files[0].name;
     addUploadFile(recent_photo,hsc_certificate,ssc_certificate,totall);
+    window.location.reload("result.html");
     return true;
 
 }
