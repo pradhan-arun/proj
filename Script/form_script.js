@@ -1,7 +1,7 @@
 
 const namecheck =/^[A-Za-z]{2,20}\w$/;
 const emailCheck = /^[a-zA-Z.]{2,10}[a-zA-Z0-9.]{1,}@[A-Za-z]{2,}.[a-zA-Z]{2,}.{1,3}\w$/;
-const numberCheck = /^[6789]{1}[0-9]{9}\w$/;
+const numberCheck = /^[6789]{1}[0-9]{9}$/;
 
 function nameChecking(name){
     return namecheck.test(name); 
@@ -82,6 +82,24 @@ function validation(){
     }
     else{
         document.getElementById('nameError').innerHTML="name is invalid";
+        return false;
+    }
+    if(nameChecking(father_first_name) & nameChecking(father_last_name)){
+        console.log("its ok");
+        
+        document.getElementById('father_nameError').innerHTML="";
+    }
+    else{
+        document.getElementById('father_nameError').innerHTML="father is invalid";
+        return false;
+    }
+    if(nameChecking(mother_first_name) & nameChecking(mother_last_name)){
+        console.log("its ok");
+        
+        document.getElementById('mother_nameError').innerHTML="";
+    }
+    else{
+        document.getElementById('mother_nameError').innerHTML="name is invalid";
         return false;
     }
 

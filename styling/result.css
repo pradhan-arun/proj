@@ -7,6 +7,7 @@ a{
     text-decoration: none;
     font-weight: 1.5rem;
     padding: 10px;
+    margin: 10px;
 }
 a:hover{
     background-color: black;
@@ -21,4 +22,14 @@ td{
     color: cornsilk;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 1rem;
+}
+.res{
+    color:white;
+}
+.no_value{
+    padding: 25px;
+    margin: 25px;
+    font-weight: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
 }
